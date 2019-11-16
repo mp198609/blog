@@ -87,14 +87,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `post`,
-        path: `${__dirname}/src/pages/blog`
+        name: `images`,
+        path: `${__dirname}/src/images`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/${process.env.POSTS_FOLDER || 'mock_posts'}/`,
+        path: `${__dirname}/src/pages/blog/${process.env.POSTS_FOLDER || 'mock_posts'}/`,
         name: "posts"
       }
     },
