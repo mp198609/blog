@@ -94,7 +94,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/blog/${process.env.POSTS_FOLDER || 'mock_posts'}/`,
+        path: `${__dirname}/src/pages/blog/`,
         name: "posts"
       }
     },
